@@ -1,0 +1,67 @@
+import time
+from IPython.display import clear_output
+
+nama = "PIPIT DWI ASTUTI"
+
+# Love besar ❤️
+love = [
+    "        ❤️❤️❤️❤️❤️       ❤️❤️❤️❤️❤️        ",
+    "     ❤️❤️❤️❤️❤️❤️❤️   ❤️❤️❤️❤️❤️❤️❤️     ",
+    "   ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️   ",
+    "  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️  ",
+    " ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ ",
+    " ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ ",
+    "  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️  ",
+    "   ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️   ",
+    "    ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️    ",
+    "      ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️      ",
+    "        ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️        ",
+    "          ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️          ",
+    "            ❤️❤️❤️❤️❤️❤️❤️❤️            ",
+    "              ❤️❤️❤️❤️❤️❤️              ",
+    "                ❤️❤️❤️❤️                ",
+    "                  ❤️❤️                  ",
+    "                   ❤️                   "
+]
+
+# Animasi denyut ❤️
+for i in range(16):
+    clear_output(wait=True)
+
+    print("\n")
+    
+    if i % 2 == 0:
+        print("        💖💖💖  I LOVE YOU  💖💖💖")
+        print()
+        print(f"             {nama}")
+        print("\n")
+
+        for line in love:
+            print(line)
+
+    else:
+        print("        ❤️❤️❤️  I LOVE YOU  ❤️❤️❤️")
+        print()
+        print(f"             {nama}")
+        print("\n")
+
+        for line in love:
+            print(line.replace("❤️", "💗"))
+
+    time.sleep(0.45)
+
+# Tampilan akhir
+clear_output(wait=True)
+
+print("\n\n")
+print("        💖💖💖  I LOVE YOU  💖💖💖")
+print()
+print(f"             {nama}")
+print("\n")
+
+for line in love:
+    print(line)
+
+print("\n")
+print("              ❤️")
+print("         FOREVER & EVER")
