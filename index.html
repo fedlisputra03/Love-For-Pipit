@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Untuk Pipit ❤️</title>
 
     <style>
+
         * {
             box-sizing: border-box;
         }
@@ -14,13 +16,25 @@
         body {
             margin: 0;
             min-height: 100vh;
+
             display: flex;
             justify-content: center;
             align-items: center;
+
             text-align: center;
+
             font-family: Arial, sans-serif;
-            background: radial-gradient(circle, #ffb6c1, #ff4f81, #c2185b);
+
+            background:
+                radial-gradient(
+                    circle,
+                    #ffb6c1,
+                    #ff4f81,
+                    #c2185b
+                );
+
             color: white;
+
             overflow: hidden;
         }
 
@@ -30,36 +44,65 @@
         }
 
         .title {
-            font-size: clamp(35px, 8vw, 80px);
+            font-size: clamp(40px, 9vw, 90px);
+
             font-weight: bold;
-            text-shadow: 0 0 15px white,
-                         0 0 30px #ff0055;
+
+            text-shadow:
+                0 0 15px white,
+                0 0 30px #ff0055;
+
             animation: glow 1.5s infinite alternate;
         }
 
         .name {
             font-size: clamp(25px, 5vw, 50px);
+
             font-weight: bold;
+
             margin-top: 10px;
-            margin-bottom: 30px;
-            text-shadow: 0 0 15px white;
+            margin-bottom: 20px;
+
+            text-shadow:
+                0 0 15px white;
         }
 
         .heart {
-            font-size: clamp(150px, 30vw, 350px);
+
+            font-size: clamp(
+                180px,
+                35vw,
+                400px
+            );
+
             line-height: 1;
+
             animation: heartbeat 1.2s infinite;
-            filter: drop-shadow(0 0 20px #fff)
-                    drop-shadow(0 0 40px #ff0055)
-                    drop-shadow(0 0 70px #ff0055);
+
+            filter:
+                drop-shadow(0 0 20px white)
+                drop-shadow(0 0 40px #ff0055)
+                drop-shadow(0 0 70px #ff0055);
         }
 
         .message {
-            margin-top: 25px;
-            font-size: clamp(18px, 3vw, 30px);
+
+            margin-top: 20px;
+
+            font-size: clamp(
+                18px,
+                3vw,
+                30px
+            );
+
             font-weight: bold;
-            text-shadow: 0 0 10px white;
+
+            text-shadow:
+                0 0 10px white;
         }
+
+
+        /* ❤️ ANIMASI JANTUNG */
 
         @keyframes heartbeat {
 
@@ -68,7 +111,7 @@
             }
 
             25% {
-                transform: scale(1.12);
+                transform: scale(1.15);
             }
 
             40% {
@@ -76,67 +119,44 @@
             }
 
             60% {
-                transform: scale(1.12);
+                transform: scale(1.15);
             }
 
             100% {
                 transform: scale(1);
             }
+
         }
+
+
+        /* ✨ ANIMASI CAHAYA */
 
         @keyframes glow {
 
             from {
+
                 text-shadow:
                     0 0 10px white,
                     0 0 20px #ff0055;
+
             }
 
             to {
+
                 text-shadow:
-                    0 0 25px white,
-                    0 0 50px #ff0055;
+                    0 0 30px white,
+                    0 0 60px #ff0055;
+
             }
+
         }
 
-        .sparkle {
-            position: absolute;
-            font-size: 25px;
-            animation: float 4s linear infinite;
-            opacity: 0;
-        }
-
-        @keyframes float {
-
-            0% {
-                transform: translateY(100vh);
-                opacity: 0;
-            }
-
-            20% {
-                opacity: 1;
-            }
-
-            80% {
-                opacity: 1;
-            }
-
-            100% {
-                transform: translateY(-10vh);
-                opacity: 0;
-            }
-        }
     </style>
+
 </head>
 
-<body>
 
-    <div class="sparkle" style="left:10%; animation-delay:0s;">✨</div>
-    <div class="sparkle" style="left:25%; animation-delay:1s;">💖</div>
-    <div class="sparkle" style="left:40%; animation-delay:2s;">✨</div>
-    <div class="sparkle" style="left:60%; animation-delay:0.5s;">💕</div>
-    <div class="sparkle" style="left:75%; animation-delay:1.5s;">✨</div>
-    <div class="sparkle" style="left:90%; animation-delay:2.5s;">💗</div>
+<body>
 
     <div class="container">
 
@@ -159,4 +179,5 @@
     </div>
 
 </body>
+
 </html>
